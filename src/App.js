@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Data from './components/Data';
 import Footer from './components/Footer';
 import Visualization from './components/Visualization';
+import VisualizationPage from './components/VisualizationPage';
 import './App.css';
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/data" element={<Data sensorData={sensorData} />} />
           <Route path="/visualization" element={<Visualization sensorData={sensorData} />} />
+          <Route path="/visualization/:location" element={<VisualizationPage sensorData={sensorData} />} />
         </Routes>
         <Footer />
       </div>

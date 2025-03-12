@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { FiMenu, FiX } from 'react-icons/fi';
-import { FaRegChartBar } from 'react-icons/fa';
-import './Navbar.css';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { FiMenu, FiX } from "react-icons/fi";
+import { FaRegChartBar } from "react-icons/fa";
+import "./Navbar.css";
 
 function Navbar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -12,19 +12,25 @@ function Navbar() {
       <div className="navbar-container">
         <Link to="/" className="navbar-brand">
           <FaRegChartBar className="brand-icon" />
-          <span>EnviroMonitor</span>
+          <span>EnviMon</span>
         </Link>
 
-        <div 
-          className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}
+        <div
+          className={`nav-links ${isMobileMenuOpen ? "active" : ""}`}
           onClick={() => setMobileMenuOpen(false)}
         >
-          <Link to="/" className="nav-link">Home</Link>
-          <Link to="/data" className="nav-link">Live Data</Link>
-          <Link to="/visualization" className="nav-link">Analytics</Link>
+          <Link to="/" className="nav-link">
+            Home
+          </Link>
+          <Link to="/data" className="nav-link">
+            Live Data
+          </Link>
+          <Link to="/visualization" className="nav-link">
+            Analytics
+          </Link>
         </div>
 
-        <button 
+        <button
           className="mobile-menu-toggle"
           onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
         >

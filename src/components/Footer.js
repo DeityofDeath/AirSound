@@ -15,7 +15,7 @@ function Footer() {
       <div className="footer-container">
         <div className="footer-section">
           <h3 className="footer-heading">
-            <span className="footer-logo">Enviro</span>Monitor
+            <span className="footer-logo">Envi</span>Mon
           </h3>
           <p className="footer-description">
             Real-time environmental monitoring system providing actionable
@@ -67,7 +67,7 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; 2024 EnviroMonitor. All rights reserved.</p>
+        <p>&copy; 2024 EnviMon. All rights reserved.</p>
         <p>Made with ♥ for a cleaner environment</p>
       </div>
     </footer>
