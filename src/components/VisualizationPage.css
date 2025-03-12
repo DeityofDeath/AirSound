@@ -1,0 +1,167 @@
+.visualization-page {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.back-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: #0984e3;
+}
+
+.back-icon {
+  font-size: 1.2rem;
+}
+
+.header-section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.page-title {
+  font-size: 2.2rem;
+  color: #2d3436;
+  margin-bottom: 1rem;
+}
+
+.status-overview {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.status-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.status-dot.air-quality { background-color: #4CAF50; }
+.status-dot.sound-level { background-color: #2196F3; }
+
+.gauge-grid {
+  display: grid;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.metric-group {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.group-title {
+  font-size: 1.4rem;
+  color: #2d3436;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.group-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.gauge-card {
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.gauge-card:hover {
+  transform: translateY(-3px);
+}
+
+.gauge-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.gauge-title {
+  font-size: 1.1rem;
+  color: #2d3436;
+  font-weight: 600;
+}
+
+.status-tag {
+  font-size: 0.85rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.status-tag.good { background: #e8f5e9; color: #2e7d32; }
+.status-tag.moderate { background: #fff3e0; color: #ef6c00; }
+.status-tag.poor { background: #ffebee; color: #c62828; }
+
+.gauge-value {
+  font-size: 2rem;
+  font-weight: 700;
+  fill: #2d3436;
+}
+
+.gauge-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.gauge-range {
+  padding: 0.2rem 0.5rem;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 1.8rem;
+  }
+  
+  .group-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .gauge-card {
+    padding: 1rem;
+  }
+  
+  .gauge-value {
+    font-size: 1.8rem;
+  }
+}

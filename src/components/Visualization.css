@@ -1,16 +1,90 @@
-/* .visualization-container {
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.chart-wrapper {
-  margin-bottom: 40px;
-}
-
-h2, h3 {
-  color: #333;
-} */
+.visualization-page {
+    padding: 4rem 0;
+    min-height: calc(100vh - 160px);
+  }
+  
+  .dashboard-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    position: relative;
+    padding-bottom: 1rem;
+  }
+  
+  .dashboard-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: var(--secondary-color);
+    border-radius: 2px;
+  }
+  
+  .gauges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    padding: 2rem 0;
+  }
+  
+  .meter-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: var(--card-shadow);
+    transition: transform var(--transition-speed) ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .meter-container:hover {
+    transform: translateY(-5px);
+  }
+  
+  .meter-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--secondary-color);
+  }
+  
+  .gauge-title {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  .gauge-value {
+    font-size: 1.4rem;
+    font-weight: 600;
+    fill: var(--primary-color);
+  }
+  
+  .back-button {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 100;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--secondary-color);
+    border: 1px solid rgba(9, 132, 227, 0.2);
+    box-shadow: var(--card-shadow);
+  }
+  
+  .back-button:hover {
+    background: white;
+    color: var(--secondary-color);
+    transform: translateY(-2px);
+  }
