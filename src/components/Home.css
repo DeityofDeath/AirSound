@@ -1,23 +1,19 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+#home {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9fafc;
 }
 
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f0f0f0;
-  color: #333;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-h1, h2, h3 {
+h1 {
+  font-size: 2.5rem;
+  color: #2d3436;
   margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #636e72;
+  margin-bottom: 30px;
 }
 
 button {
