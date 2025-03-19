@@ -25,8 +25,8 @@ function Navbar() {
           <Link to="/data" className="nav-link">
             Live Data
           </Link>
-          <Link to="/visualization" className="nav-link">
-            Analytics
+          <Link to="/about" className="nav-link">
+            About
           </Link>
         </div>
 

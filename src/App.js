@@ -4,8 +4,8 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Data from './components/Data';
 import Footer from './components/Footer';
-import Visualization from './components/Visualization';
 import VisualizationPage from './components/VisualizationPage';
+import ThingSpeakVisualizer from './components/Visualization';
 import './App.css';
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/data" element={<Data sensorData={sensorData} />} />
-          <Route path="/visualization" element={<Visualization sensorData={sensorData} />} />
+          <Route path="/about" element={<ThingSpeakVisualizer />} />
           <Route path="/visualization/:location" element={<VisualizationPage sensorData={sensorData} />} />
         </Routes>
         <Footer />
