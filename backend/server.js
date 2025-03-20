@@ -79,13 +79,13 @@ app.get("/api/data", async (req, res) => {
       (1 + alpha * (temperature - T_ref)) * (1 - beta * humidity);
 
     if (co2level !== null)
-      co2level = Math.round((co2level * correctionFactor) / 10);
+      co2level = Math.round((co2level * correctionFactor) / 10) + 400;
     if (colevel !== null)
-      colevel = Math.round((colevel * correctionFactor) / 5000);
+      colevel = Math.round((colevel * correctionFactor) / 1000);
     if (nh4level !== null)
-      nh4level = Math.round((nh4level * correctionFactor) / 50);
+      nh4level = Math.round((nh4level * correctionFactor) / 10);
     if (toulenelevel !== null)
-      toulenelevel = Math.round((toulenelevel * correctionFactor) / 50);
+      toulenelevel = Math.round((toulenelevel * correctionFactor) / 10);
 
     res.json({
       airQuality1,

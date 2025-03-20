@@ -25,8 +25,8 @@ const IoTVisualization = () => {
           created_at: new Date(feed.created_at).toLocaleTimeString(),
           airQuality: feed.field1,
           soundLevel: feed.field2,
-          temperature: dhtResult.feeds[index]?.field2,
-          humidity: dhtResult.feeds[index]?.field1
+          temperature: dhtResult.feeds[index]?.field1,
+          humidity: dhtResult.feeds[index]?.field2
         }));
 
         setData(combinedData);
